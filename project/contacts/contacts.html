@@ -33,19 +33,21 @@
 		.content-size { max-width: 980px; margin: 30px auto; }
 		.title-page { margin: 40px auto 20px; max-width: 100px; text-align: center; display: flex; flex-direction: column; font-family: 'Oswald'; }
 		.title-page-block { display: flex; justify-content: center; }
-		.title-page::after { height: 4px; width: 60%; background-color: rgb(0,0,0); margin: 5px auto 0; display: flex; content: ''; text-align: center; }
+		.title-page::after { height: 4px; width: 60%; background-color: rgb(230,57,69); margin: 5px auto 0; display: flex; content: ''; text-align: center; }
 		.wrapper-info-block { width: 910px; margin: auto; text-align: center; display: flex; justify-content: center; vertical-align: center; }
 		.info-block { width: 450px; height: 170px; margin: 5px; display: flex; flex-direction: column; border: solid rgb(0,0,0,0.1) 1px; }
-		.info-block:hover,.info-block-1:hover { background-color: rgb(255,255,255); box-shadow: 0px 0px 10px 4px rgb(0,0,0,0.3); transform: scale(1.15); transition: .3s; }
-		.info-block h2::after,.info-block-1 h2::after,.form-size h2:after { height: 4px; width: 67px; background-color: rgb(0,0,0); margin: 5px auto 0; display: flex; content: ''; text-align: center; }
-		.info-block h2,.info-block-1 h2 { font-size: 18px; }
-		.info-block p,.info-block-1 p { margin: 5px; font-size: 13px;}
-		.info-block-1 { width: 900px; height: 170px; margin: 5px auto; display: flex; flex-direction: column; border: solid rgb(0,0,0,0.1) 1px; text-align: center; }
-		.info-block-1:hover {transform: scale(1.07); }
+		.info-block:hover,.info-block-requisites:hover { background-color: rgb(255,255,255); box-shadow: 0px 0px 10px 4px rgb(0,0,0,0.3); transform: scale(1.15); transition: .3s; }
+		.info-block h2::after,.info-block-requisites h2::after,.form-size h2:after { height: 4px; width: 67px; background-color: rgb(230,57,69); margin: 5px auto 0; display: flex; content: ''; text-align: center; }
+		.info-block h2,.info-block-requisites h2 { font-size: 18px; }
+		.info-block p,.info-block-requisites p { margin: 5px; font-size: 13px;}
+		.info-block-requisites { width: 900px; height: 170px; margin: 5px auto; display: flex; flex-direction: column; border: solid rgb(0,0,0,0.1) 1px; text-align: center; }
+		.info-block-requisites:hover {transform: scale(1.07); }
 		.form-size { margin: 30px auto; width: 350px; text-align: center; display: flex; flex-direction: column; }
 		.form-name { text-align: center; }
 		.form-input-name,.form-input-email,.form-input-message { width: 336px; padding: 10px 5px; margin: 10px 0; font-size: 17px; }
 		.form-input-message { min-height: 100px; max-height: 200px; max-width: 336px; min-width: 336px; }
+		.form-button { width: 100%; padding: 10px 5px; text-align: center; color: white; border: solid 1px rgb(0,0,0,0.1); background-color: rgb(230,57,69); margin: 10px 0;}
+		.form-button:hover { background-color: rgb(0,0,0,0.7); box-shadow: 0px 0px 10px 4px rgb(0,0,0,0.3); transition: .2s; }
 	
 
 	</style>
@@ -94,7 +96,7 @@
 		</div>
 
 </div>
-<div class="info-block-1">
+<div class="info-block-requisites">
 		<h2>Реквизиты</h2>
 		<p>ИП Несоздали, свидетельство о гос. регистрации от такого-то числа не получено.</p>
 		<p>Юридический и почтовый адрес: должен был быть, но соре.</p>
@@ -110,7 +112,16 @@
 		<input type="text" name="name" placeholder="Введите ваше Имя" class="form-input-name">
 		<input type="text" name="email" placeholder="Введите ваш E-mail" class="form-input-email">
 		<textarea name="message" placeholder="Сообщение" class="form-input-message"></textarea>
-
+<iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LcM_GgUAAAAADaiOOFpizr4Xwin3n-hWMozAEj7&amp;co=aHR0cHM6Ly8wNjcuYnk6NDQz&amp;hl=ru&amp;v=v1556519546724&amp;size=normal&amp;cb=5nnz2yxysajy" width="304" height="78" role="presentation" name="a-eauo3fxa61tq" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+ <script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script>
+  <script>
+  grecaptcha.ready(function() {
+      grecaptcha.execute('reCAPTCHA_site_key', {action: 'homepage'}).then(function(token) {
+         ...
+      });
+  });
+  </script>
+  <button class="form-button">Отправить</button>
 	</form>
 </div>
 

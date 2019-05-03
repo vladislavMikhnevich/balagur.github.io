@@ -6,6 +6,7 @@
 	<title>Цена</title>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 	<style type="text/css">
 		html, body { height: 100%; }
 		body { margin: 0 auto;  font-family: 'Roboto', sans-serif; padding: 0; }
@@ -28,8 +29,23 @@
 		.footer-social-name { color: white; font-size: 13px; }
 		.footer-social-url { color: white; font-size: 20px; padding: 5px 8px; }
 		content { flex: 1 0 auto; background: url(../index/background-content.png) repeat; width: 100%; }
-		.content-size { max-width: 980px; margin: auto; }
-
+		.content-size { max-width: 980px; margin: 30px auto; }
+		.title-page { margin: 40px auto 20px; max-width: 250px; text-align: center; display: flex; flex-direction: column; font-family: 'Oswald'; }
+		.title-page-block { display: flex; justify-content: center; }
+		.title-page::after { height: 4px; width: 20%; background-color: rgb(230,57,69); margin: 5px auto 0; display: flex; content: ''; text-align: center; }
+		.bonus-container { display: flex; justify-content: center; flex-wrap: wrap; flex-direction: row; text-align: center;  margin: 30px auto; }
+		.bonus-block { display: flex; flex-direction: column; text-align: center; width: 250px; }
+		.bonus-block i { padding: 5px; font-size: 35px; color: rgb(230,57,69); }
+		.bonus-block h3 { width: 150px; margin: 10px auto; }
+		.bonus-block h3::after { height: 4px; width: 50px; background-color: rgb(230,57,69); margin: 5px auto 0; display: flex; content: ''; text-align: center; }
+		.bonus-block p { padding: 5px 0; margin: 5px auto; font-size: 13px; }
+		.price-container { text-align: center; display: flex; justify-content: space-around; }
+		.price-block{ list-style-type: none; display: flex; flex-direction: column; padding: 0; text-align: center; border: 1px solid rgb(0,0,0,0.3); }
+		.price-block li { border-bottom: solid 1px rgb(0,0,0,0.3); padding: 10px; width: 250px; }
+		.price-block li:last-child { border-bottom: 0; }
+		.price-block-head { font-size: 20px; font-family: 'Roboto', sans-serif; background-color: rgb(230,57,69); color: white; padding: 25px;}
+		.price-block-time { font-size: 18px; fon }
+		.price { font-size: 22px; color: rgb(230,57,69); }
 	</style>
 </head>
 <body>
@@ -53,9 +69,66 @@
 
 <content>
 	<div class="content-size">
-		
+		<h1 class="title-page"><span class="title-page-block">Акции</span></h1>
+
+		<div class="bonus-container">
+
+			<div class="bonus-block">
+				<i class="far fa-smile-beam"></i>
+				<h3>Бесплатная игра организатору</h3>
+				<p>Организатор играет бесплатно: в лазертаг; в пейнтбол по пакету «200 шаров» или получает 400 шаров в подарок. Другие игроки могут играть по любому иному пакету.</p>
+			</div>
+			
+            <div class="bonus-block">
+				<i class="fas fa-camera"></i>
+				<h3>Экшн-камера имениннику</h3>
+				<p>Экшн-камера предоставляется бесплатно.</p>
+			</div>
 
 
+			<div class="bonus-block">
+				<i class="fas fa-percent"></i>
+				<h3>Скидка 15% студентам</h3>
+				<p>При заказе игры по пакету «200 шаров» всем студентам дневного отделения, каждый четверг, предоставляется скидка 15%.</p>
+			</div>
+
+			<div class="bonus-block">
+				<i class="fas fa-phone-volume"></i>
+				<h3>300 шаров за звонок</h3>
+				<p>При заказе игры в пейнтбол с первого звонка Вы получаете в подарок 300 шаров.</p>
+			</div>
+			
+			<div class="bonus-block">
+				<i class="fas fa-user-friends"></i>
+				<h3>Большая компания</h3>
+				<p>Для больших компаний и коллективов свыше 30-ти игроков предоставляется скидка 15%</p>
+			</div>
+		</div>
+
+            <h1 class="title-page"><span class="title-page-block">Цены</span></h1>
+
+      <div class="price-container">
+      	<ul class="price-block">
+      		<li class="price-block-head">Пейнтбол</li>
+      		<li class="price-block-time">Понедельник - Суббота</li>
+      		<li class="price-block-info">200 шаров</li>
+      		<li class="price">25 р. 00к.</li>
+      	</ul>
+
+      	<ul class="price-block">
+      		<li class="price-block-head">Лазертаг</li>
+      		<li class="price-block-time">Понедельник - Суббота</li>
+      		<li class="price-block-info">1 час</li>
+      		<li class="price">15 р. 00к.</li>
+      	</ul>
+
+      	<ul class="price-block">
+      		<li class="price-block-head">Страйкбол</li>
+      		<li class="price-block-time">Понедельник - Суббота</li>
+      		<li class="price-block-info">3 игры</li>
+      		<li class="price">20 р. 00к.</li>
+      	</ul>
+      </div>
 
 	</div>
 </content>
