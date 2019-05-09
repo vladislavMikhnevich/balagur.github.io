@@ -7,7 +7,6 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-
 	<style type="text/css">
 		html, body { height: 100%; }
 		body { margin: 0 auto; font-family: 'Roboto', sans-serif; padding: 0; }
@@ -15,14 +14,14 @@
 		.header { background: url(../index/background-image.png); width: 100%;  }
 		.header-size{ max-width: 980px; margin: 0 auto; display: flex; justify-content: space-between; }
 		.header-logo { height: 50px; text-align: center; padding: 10px; }
-		.header-menu { list-style-type: none; display: flex; justify-content: space-between; width: 520px; padding: 10px; }
-		.header-menu li { text-align: center; text-transform: uppercase; font-size: 13px; display: flex; font-weight: 900; }
+		.header-menu { list-style-type: none; display: flex; justify-content: space-between; max-width: 400px; padding: 10px; }
+		.header-menu li { text-align: center; text-transform: uppercase; font-size: 13px; display: flex; font-weight: 900; padding: 5px 20px; }
 		.header-menu-link { color: white; text-decoration: none; }
 		.header-menu-link:hover { transition: .5s; transform: scale(1.2); color: rgb(0,0,0);}
 		.footer { background: url(../index/background-image.png); width: 100%; flex: 0 0 auto; }
 		.footer-size { max-width: 980px; margin: 0 auto; display: flex; flex-direction: column; text-align: center;}
-		.footer-menu { list-style-type: none; display: flex; justify-content: space-between; padding: 10px; width: 500px; margin: auto;}
-		.footer-menu li { text-align: center; font-size: 15px; display: flex; }
+		.footer-menu { list-style-type: none; display: flex; justify-content: space-between; padding: 10px; max-width: 400px; margin: auto;}
+		.footer-menu li { text-align: center; font-size: 15px; display: flex;  padding: 5px 16px; }
 		.footer-menu-link { color: white; text-decoration: none; padding: 5px; }
 		.footer-menu-link:hover { color: rgb(0,0,0); }
 		.social { display: flex; justify-content: space-between; max-width: 150px; margin: 0 auto;}
@@ -34,20 +33,45 @@
 		.title-page { margin: 40px auto 20px; max-width: 100px; text-align: center; display: flex; flex-direction: column; font-family: 'Oswald'; }
 		.title-page-block { display: flex; justify-content: center; }
 		.title-page::after { height: 4px; width: 60%; background-color: rgb(230,57,69); margin: 5px auto 0; display: flex; content: ''; text-align: center; }
-		.wrapper-info-block { width: 910px; margin: auto; text-align: center; display: flex; justify-content: center; vertical-align: center; }
-		.info-block { width: 450px; height: 170px; margin: 5px; display: flex; flex-direction: column; border: solid rgb(0,0,0,0.1) 1px; }
+		.wrapper-info-block {  margin: 0px; text-align: center; display: flex; justify-content: space-around; vertical-align: center; }
+		.info-block { width: 495px; height: 170px; margin: 5px; display: flex; flex-direction: column; border: solid rgb(0,0,0,0.1) 1px; }
 		.info-block:hover,.info-block-requisites:hover { background-color: rgb(255,255,255); box-shadow: 0px 0px 10px 4px rgb(0,0,0,0.3); transform: scale(1.15); transition: .3s; }
 		.info-block h2::after,.info-block-requisites h2::after,.form-size h2:after { height: 4px; width: 67px; background-color: rgb(230,57,69); margin: 5px auto 0; display: flex; content: ''; text-align: center; }
 		.info-block h2,.info-block-requisites h2 { font-size: 18px; }
 		.info-block p,.info-block-requisites p { margin: 5px; font-size: 13px;}
-		.info-block-requisites { width: 900px; height: 170px; margin: 5px auto; display: flex; flex-direction: column; border: solid rgb(0,0,0,0.1) 1px; text-align: center; }
+		.info-block-requisites { max-width: 980px; height: 170px; margin: 5px; display: flex; flex-direction: column; border: solid rgb(0,0,0,0.1) 1px; text-align: center; }
 		.info-block-requisites:hover {transform: scale(1.07); }
-		.form-size { margin: 30px auto; width: 350px; text-align: center; display: flex; flex-direction: column; }
+		.form-size { margin: 30px auto; text-align: center; display: flex; flex-direction: column; }
+		form { flex-direction: column; display: flex; margin: auto; max-width: 980px; }
 		.form-name { text-align: center; }
-		.form-input-name,.form-input-email,.form-input-message { width: 336px; padding: 10px 5px; margin: 10px 0; font-size: 17px; }
-		.form-input-message { min-height: 100px; max-height: 200px; max-width: 336px; min-width: 336px; }
-		.form-button { width: 100%; padding: 10px 5px; text-align: center; color: white; border: solid 1px rgb(0,0,0,0.1); background-color: rgb(230,57,69); margin: 10px 0;}
+		.form-input-name,.form-input-email,.form-input-message { width: 300px; padding: 10px 5px; margin: 10px auto; font-size: 17px; }
+		.form-input-message { min-height: 100px; max-height: 200px; width: 300px; min-width: 300px; max-width: 300px; }
+		.form-button { width: 220px; padding: 10px 5px; text-align: center; color: white; border: solid 1px rgb(0,0,0,0.1); background-color: rgb(230,57,69); margin: 10px auto;}
 		.form-button:hover { background-color: rgb(0,0,0,0.7); box-shadow: 0px 0px 10px 4px rgb(0,0,0,0.3); transition: .2s; }
+
+		@media (max-width: 930px) {
+			.wrapper-info-block { display: flex; flex-direction: column; width: 90%; margin: auto; }
+			.info-block { width: 100%; margin: 5px auto; }
+			.info-block-requisites { width: 90%; margin: 5px auto; }
+		}
+
+		@media (max-width: 585px) {
+			.header-size { display: flex; flex-direction: column; }
+			.header-logo { margin: 0 auto; text-align: center; }
+			.header-menu { justify-content: space-around; max-width: 100%; margin: auto; padding: 10px 0;}
+			.info-block-requisites { height: auto; }
+		}
+
+		@media (max-width: 487px) {
+			.header-menu { flex-direction: column; text-align: center; margin: auto; }
+			.header-menu li { padding: 10px; margin: auto; }
+			.footer-menu { display: none; }
+			.form-name { width: 200px; margin: auto; }
+			.font-size { margin: 0 auto; }
+			.form-input-name,.form-input-email,.form-input-message { width: 100%; margin: 10px auto; }
+			.form-input-message { max-width: 100%; min-width: 100%; margin: 10px auto; }
+
+		}
 	
 
 	</style>
@@ -64,7 +88,6 @@
 	<li><a class="header-menu-link" href="../service/service.html">Услуги</a></li>
 	<li><a href="../location/location.html" class="header-menu-link">Наша база</a></li>
 	<li><a href="../price/price.html" class="header-menu-link">Цены</a></li>
-	<li><a href="../rewiews/rewiews.html" class="header-menu-link">Отзывы</a></li>
 	<li><a href="../contacts/contacts.html" class="header-menu-link">Контакты</a></li>
 </ul>
 
@@ -108,24 +131,14 @@
 	<h2 class="form-name">Остались вопросы?</h2>
 
 	<form>
-		
 		<input type="text" name="name" placeholder="Введите ваше Имя" class="form-input-name">
 		<input type="text" name="email" placeholder="Введите ваш E-mail" class="form-input-email">
 		<textarea name="message" placeholder="Сообщение" class="form-input-message"></textarea>
-<iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LcM_GgUAAAAADaiOOFpizr4Xwin3n-hWMozAEj7&amp;co=aHR0cHM6Ly8wNjcuYnk6NDQz&amp;hl=ru&amp;v=v1556519546724&amp;size=normal&amp;cb=5nnz2yxysajy" width="304" height="78" role="presentation" name="a-eauo3fxa61tq" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
- <script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script>
-  <script>
-  grecaptcha.ready(function() {
-      grecaptcha.execute('reCAPTCHA_site_key', {action: 'homepage'}).then(function(token) {
-         ...
-      });
-  });
-  </script>
-  <button class="form-button">Отправить</button>
+        <button class="form-button">Отправить</button>
 	</form>
+
+
 </div>
-
-
 
 	</div>
 </content>
@@ -137,7 +150,6 @@
 	<li><a class="footer-menu-link" href="../service/service.html">Услуги</a></li>
 	<li><a href="../location/location.html" class="footer-menu-link">Наша база</a></li>
 	<li><a href="../price/price.html" class="footer-menu-link">Цены</a></li>
-	<li><a href="../rewiews/rewiews.html" class="footer-menu-link">Отзывы</a></li>
 	<li><a href="../contacts/contacts.html" class="footer-menu-link">Контакты</a></li>
 </ul>
 <div class="footer-social">
