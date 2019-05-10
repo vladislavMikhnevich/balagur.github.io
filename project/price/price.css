@@ -18,7 +18,7 @@ html, body { height: 100%; }
 		.footer-social { display: flex; flex-direction: column; }
 		.footer-social-name { color: white; font-size: 13px; }
 		.footer-social-url { color: white; font-size: 20px; padding: 5px 8px; }
-		content { flex: 1 0 auto; background: url(../index/background-content.png) repeat; width: 100%; }
+		.content { flex: 1 0 auto; background: url(../index/background-content.png) repeat; width: 100%; }
 		.content-size { max-width: 980px; margin: 30px auto; }
 		.title-page { margin: 40px auto 20px; max-width: 250px; text-align: center; display: flex; flex-direction: column; font-family: 'Oswald'; }
 		.title-page-block { display: flex; justify-content: center; }
@@ -34,7 +34,7 @@ html, body { height: 100%; }
 		.price-block li { border-bottom: solid 1px rgb(0,0,0,0.3); padding: 10px; width: 250px; }
 		.price-block li:last-child { border-bottom: 0; }
 		.price-block-head { font-size: 20px; font-family: 'Roboto', sans-serif; background-color: rgb(230,57,69); color: white; padding: 25px;}
-		.price-block-time { font-size: 18px; fon }
+		.price-block-time { font-size: 18px; }
 		.price { font-size: 22px; color: rgb(230,57,69); }
 		.to-top { position: fixed; right: 15px; bottom: 25px; color: rgb(230,57,69); font-size: 41px; opacity: .7; }
 		.to-top:hover { opacity: 1; }
