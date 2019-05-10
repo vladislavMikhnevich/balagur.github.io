@@ -29,6 +29,8 @@ html, body { height: 100%; }
 		.location-paintboll { display: flex; justify-content: space-between; margin: 40px auto; }
 		.paintboll-image { padding: 5px; object-fit: cover; width: 33%; }
 		.paintboll-image img { width: 100%; }
+		.to-top { position: fixed; right: 15px; bottom: 25px; color: rgb(230,57,69); font-size: 41px; opacity: .7; }
+		.to-top:hover { opacity: 1; }
 
 		@media (max-width: 768px) { 
 		.location-paintboll { flex-direction: column; }

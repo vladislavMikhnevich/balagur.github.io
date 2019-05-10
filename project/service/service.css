@@ -36,6 +36,8 @@ html, body { height: 100%; }
 		.equipment-container { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; }
 		.equipment-block { flex-direction: column; margin: 10px; text-align: center; padding: 1px; }
 		.equipment-block p { color: rgb(230,57,69); font-weight: 600; }
+		.to-top { position: fixed; right: 15px; bottom: 25px; color: rgb(230,57,69); font-size: 41px; opacity: .7; }
+		.to-top:hover { opacity: 1; }
 
 		@media (max-width: 980px) {
 			.equipment-block { flex-direction: column; }

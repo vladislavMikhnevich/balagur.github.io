@@ -33,6 +33,9 @@ html, body { height: 100%; }
 		.info-button  { display: flex; }
 		.button { text-decoration: none; color: white; padding: 15px 40px; margin: 10px 20px; border-radius: 15px; margin: 20px auto; text-transform: uppercase; background-image: linear-gradient(to right, rgb(230,57,69) 0%, rgb(230,57,69) 51%, #8b008b 100%); background-size: 200% auto; }
 		.button:hover { background-position: right;  transition: .3s }
+		.to-top { position: fixed; right: 15px; bottom: 25px; color: rgb(230,57,69); font-size: 41px; opacity: .7; }
+		.to-top:hover { opacity: 1; }
+
 
 		@media (max-width: 680px) { 
 		.info-block { display: flex; flex-direction: column; }

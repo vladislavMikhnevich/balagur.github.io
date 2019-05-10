@@ -36,6 +36,8 @@ html, body { height: 100%; }
 		.price-block-head { font-size: 20px; font-family: 'Roboto', sans-serif; background-color: rgb(230,57,69); color: white; padding: 25px;}
 		.price-block-time { font-size: 18px; fon }
 		.price { font-size: 22px; color: rgb(230,57,69); }
+		.to-top { position: fixed; right: 15px; bottom: 25px; color: rgb(230,57,69); font-size: 41px; opacity: .7; }
+		.to-top:hover { opacity: 1; }
 
 		@media (max-width: 585px) {
 			.header-size { display: flex; flex-direction: column; }
