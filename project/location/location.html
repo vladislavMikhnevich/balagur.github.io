@@ -5,32 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Местоположение</title>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="location.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	<style type="text/css">
-		html, body { height: 100%; }
-		body { margin: 0 auto;  font-family: 'Roboto', sans-serif; padding: 0; }
-		.wrapper { display: flex; flex-direction: column; height: 100%; }
-		.header { background: url(../index/background-image.png); width: 100%;  }
-		.header-size{ max-width: 980px; margin: 0 auto; display: flex; justify-content: space-between; }
-		.header-logo { height: 50px; text-align: center; padding: 10px; }
-		.header-menu { list-style-type: none; display: flex; justify-content: space-between; width: 520px; padding: 10px; }
-		.header-menu li { text-align: center; text-transform: uppercase; font-size: 13px; display: flex; font-weight: 900; }
-		.header-menu-link { color: white; text-decoration: none; }
-		.header-menu-link:hover { transition: .5s; transform: scale(1.2); color: rgb(0,0,0);}
-		.footer { background: url(../index/background-image.png); width: 100%; flex: 0 0 auto; }
-		.footer-size { max-width: 980px; margin: 0 auto; display: flex; flex-direction: column; text-align: center;}
-		.footer-menu { list-style-type: none; display: flex; justify-content: space-between; padding: 10px; width: 500px; margin: auto;}
-		.footer-menu li { text-align: center; font-size: 15px; display: flex; }
-		.footer-menu-link { color: white; text-decoration: none; padding: 5px; }
-		.footer-menu-link:hover { color: rgb(0,0,0); }
-		.social { display: flex; justify-content: space-between; max-width: 150px; margin: 0 auto;}
-		.footer-social { display: flex; flex-direction: column; }
-		.footer-social-name { color: white; font-size: 13px; }
-		.footer-social-url { color: white; font-size: 20px; padding: 5px 8px; }
-		content { flex: 1 0 auto; background: url(../index/background-content.png) repeat; width: 100%; }
-		.content-size { max-width: 980px; margin: auto; }
-
-	</style>
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 </head>
 <body>
 	<div class="wrapper">
@@ -44,7 +21,6 @@
 	<li><a class="header-menu-link" href="../service/service.html">Услуги</a></li>
 	<li><a href="../location/location.html" class="header-menu-link">Наша база</a></li>
 	<li><a href="../price/price.html" class="header-menu-link">Цены</a></li>
-	<li><a href="../rewiews/rewiews.html" class="header-menu-link">Отзывы</a></li>
 	<li><a href="../contacts/contacts.html" class="header-menu-link">Контакты</a></li>
 </ul>
 
@@ -53,10 +29,44 @@
 
 <content>
 	<div class="content-size">
+		<h1 class="title-page"><span class="title-page-block">База</span></h1>
+		<h3 class="location-title">О нашей замечательной базе в Чернобыле</h3>
+		<p class="location-info">Парк активного отдыха в Чернобыле - прекрасное место для отдыха Вашей семьи, друзей и коллег. Комплекс располагает комфортными площадками для игры в пейнтбол, лазертаг и страйкбол. На территории комплекса есть кафе, гостиничные номера, бесплатная автостоянка, отдельные санузлы и возможность поиграть в волейбол, футбол.</p>
+
+		<div class="location-paintboll">
+			<div class="paintboll-image"><img src="paintboll-1.jpg"></div>
+			<div class="paintboll-image"><img src="paintboll-3.jpg"></div>
+			<div class="paintboll-image"><img src="paintboll-2.jpg"></div>
+		</div>
+
+		<h3 class="location-title">&#171 Индастриал &#187</h3>
+
+		<p class="location-info">&#171Индастриал&#187 – отвечает всем требованиям тех игроков, кто любит большое количество искусственных укрытий. Автомобили, отдельные крытые базы соперников, мост, обзорная вышка – все это Вы найдете на площадке &#171Индастриал&#187.</p>
+
+		<div class="location-paintboll">
+			<div class="paintboll-image"><img src="indastrial-1.jpg"></div>
+			<div class="paintboll-image"><img src="indastrial-3.jpg"></div>
+			<div class="paintboll-image"><img src="indastrial-2.jpg"></div>
+		</div>
+
+		<h3 class="location-title">&#171 Лабиринт &#187</h3>
+
+		<p class="location-info">&#171Лабиринт&#187 - площадка с необычной системой ходов. Для любителей контактного боя и новых ощущений от игры в пейнтбол. Ищите дополнительные ходы, будьте внимательны – противник может ожидать Вас уже за следующим поворотом!</p>
+
+		<div class="location-paintboll">
+			<div class="paintboll-image"><img src="labyrinth-1.jpg"></div>
+			<div class="paintboll-image"><img src="labyrinth-3.jpg"></div>
+			<div class="paintboll-image"><img src="labyrinth-2.jpg"></div>
+		</div>
+
+		<h3 class="location-title">Мы на карте:</h3>
 		
 
 
 
+<div class="location-map">
+<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa99ca9f545df59a89b244bcbf2acff3b124b8b9ea7e985ecd733ef94fb1d8a31&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+</div>
 	</div>
 </content>
 
@@ -67,7 +77,6 @@
 	<li><a class="footer-menu-link" href="../service/service.html">Услуги</a></li>
 	<li><a href="../location/location.html" class="footer-menu-link">Наша база</a></li>
 	<li><a href="../price/price.html" class="footer-menu-link">Цены</a></li>
-	<li><a href="../rewiews/rewiews.html" class="footer-menu-link">Отзывы</a></li>
 	<li><a href="../contacts/contacts.html" class="footer-menu-link">Контакты</a></li>
 </ul>
 <div class="footer-social">
