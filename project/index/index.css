@@ -1,5 +1,5 @@
 html, body { height: 100%; }
-		body { margin: 0 auto; font-family: 'Roboto', sans-serif; padding: 0; }
+		body { margin: 0 auto;  font-family: 'Roboto', sans-serif; padding: 0; }
 		.wrapper { display: flex; flex-direction: column; height: 100%; }
 		.header { background: url(../index/background-image.png); width: 100%;  }
 		.header-size{ max-width: 980px; margin: 0 auto; display: flex; justify-content: space-between; }
@@ -18,8 +18,28 @@ html, body { height: 100%; }
 		.footer-social { display: flex; flex-direction: column; }
 		.footer-social-name { color: white; font-size: 13px; }
 		.footer-social-url { color: white; font-size: 20px; padding: 5px 8px; }
-		content { flex: 1 0 auto; background: url(index/background-content.png) repeat; width: 100%; }
+		content { flex: 1 0 auto; background: url(../index/background-content.png) repeat; width: 100%; }
 		.content-size { max-width: 980px; margin: auto; }
+		.content-size { max-width: 980px; margin: auto; }
+		.info-container { margin: 30px auto; }
+		.info-block { width: 100%; box-sizing: border-box; display: flex; object-fit: cover; }
+		.lazyload { width: 50%; object-fit: cover; }
+		.lazyload img { object-fit: cover; }
+		.block-info i { margin: 10px; color: rgb(230,57,69); font-size: 20px; }
+		.block-info { display: flex; justify-content: flex-start; }
+		.info { background: url(../index/background-image.png); flex-direction: column; width: 50%; }
+		.info h2 { color: rgb(230,57,69); font-family: 'Oswald'; text-align: center;}
+		.block-info p { margin: 10px; color: rgb(255,255,255); }
+		.info-button  { display: flex; }
+		.button { text-decoration: none; color: white; padding: 15px 40px; margin: 10px 20px; border-radius: 15px; margin: 20px auto; text-transform: uppercase; background-image: linear-gradient(to right, rgb(230,57,69) 0%, rgb(230,57,69) 51%, #8b008b 100%); background-size: 200% auto; }
+		.button:hover { background-position: right;  transition: .3s }
+
+		@media (max-width: 680px) { 
+		.info-block { display: flex; flex-direction: column; }
+		.info { width: 90%; margin: auto; order: 2; }
+		.info-block img { width: 90%; margin: auto; order: 1; }
+		.info-container { flex-direction: column; }
+		}
 
 		@media (max-width: 585px) {
 			.header-size { display: flex; flex-direction: column; }

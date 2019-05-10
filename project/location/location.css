@@ -25,7 +25,6 @@ html, body { height: 100%; }
 		.title-page::after { height: 4px; width: 35%; background-color: rgb(230,57,69); margin: 5px auto 0; display: flex; content: ''; text-align: center; }
 		.location-map { margin: 30px auto; }
 		.location-title { color: rgb(230,57,69); text-align: center; }
-		.content-size p { font-size:  }
 		.location-info { margin: auto; text-align: center; }
 		.location-paintboll { display: flex; justify-content: space-between; margin: 40px auto; }
 		.paintboll-image { padding: 5px; object-fit: cover; width: 33%; }
