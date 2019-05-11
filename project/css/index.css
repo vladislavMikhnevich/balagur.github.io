@@ -21,7 +21,7 @@ html, body { height: 100%; }
 		.content { flex: 1 0 auto; background: url(../image/index/background-content.png) repeat; width: 100%; }
 		.content-size { max-width: 980px; margin: auto; }
 		.content-size { max-width: 980px; margin: auto; }
-		.info-container { margin: 30px auto; }
+		.info-container { margin: 0 auto 30px; }
 		.info-block { width: 100%; box-sizing: border-box; display: flex; object-fit: cover; }
 		.lazyload { width: 50%; object-fit: cover; }
 		.lazyload img { object-fit: cover; }
@@ -35,13 +35,17 @@ html, body { height: 100%; }
 		.button:hover { background-position: right; transition: .3s }
 		.to-top { display: flex; position: fixed; right: 15px; bottom: 25px; color: rgb(230,57,69); font-size: 41px; opacity: .7; }
 		.to-top:hover { opacity: 1; }
-
+        .slide {color: #fff; text-align: center; margin: auto; }
+        .slider .slick-prev { left: 5px; z-index: 1; }
+        .slider .slick-next { right: 5px; z-index: 1; }
+        .slider img { margin: auto; text-align: center; max-width: 100% }
 
 		@media (max-width: 680px) { 
 		.info-block { display: flex; flex-direction: column; }
 		.info { width: 90%; margin: auto; order: 2; }
 		.info-block img { width: 90%; margin: auto; order: 1; }
 		.info-container { flex-direction: column; }
+		.slider img { min-height: 150px; min-width: 750px;}
 		}
 
 		@media (max-width: 585px) {

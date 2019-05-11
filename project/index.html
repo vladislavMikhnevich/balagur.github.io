@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+	<!-- Логотип в адресной строке -->
 	 <link rel="icon" href="index/log.gif" type="image/gif">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Парк отдыха Два Ствола</title>
+	<!-- Ссылка на css файл -->
 	<link rel="stylesheet" href="css/index.css">
+	<!-- Картинки -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<!--  Шрифты -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<!-- JS JQuery -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>   
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+</head>
 </head>
 <body>
+	<!-- Прибитие footer'a к низу -->
 	<div class="wrapper" id="start-text">
 <header class="header">
 	<div class="header-size">
+		<!-- Логотип сайта, он же ссылка на главную стр. -->
 <div class="header-logo">
 <a href="index.html"><img src="image/index/logo.jpg" alt="logo"></a>
 </div>
-
+<!-- Меню сайта -->
 <ul class="header-menu">
 	<li><a class="header-menu-link" href="html/service.html">Услуги</a></li>
 	<li><a href="html/location.html" class="header-menu-link">Наша база</a></li>
@@ -27,10 +37,17 @@
 
 </div>
 </header>
+<!-- Слайдер -->
+<div class="slider">
+      <div class="slide slide-01"><img src="image/index/slide01.png"></div>
+      <div class="slide mslide-02"><img src="image/index/slide02.jpg"></div>
+      <div class="slide slide-03"><img src="image/index/slide03.png"></div>
+    </div>
 
 <div class="content">
+	
 	<div class="content-size">
-
+<!-- Контейнер со всеми блоками -->
 		<div class="info-container">
 
 			<div class="info-block">
@@ -102,18 +119,20 @@
 		</div>
 	
 	</div>
+	<!-- Кнопка поднятия -->
 	<a href="#start-text"><i class="fas fa-arrow-circle-up to-top"></i></a>
 </div>
 
 <footer class="footer">
 	<div class="footer-size">
-
+<!-- Меню -->
 		<ul class="footer-menu">
 	<li><a class="footer-menu-link" href="html/service.html">Услуги</a></li>
 	<li><a href="html/location.html" class="footer-menu-link">Наша база</a></li>
 	<li><a href="html/price.html" class="footer-menu-link">Цены</a></li>
 	<li><a href="html/contacts.html" class="footer-menu-link">Контакты</a></li>
 </ul>
+<!-- Соц.сети -->
 <div class="footer-social">
 <p class="footer-social-name">Наши социальные сети</p>
 <div class="social">
@@ -124,6 +143,23 @@
 	</div>
 	</div>
 </footer>
+
+<!-- scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+    jQuery(function($) {
+        var navMenu = $('.header');
+        var body     = $('html, body');
+        
+        $('.slider').slick({
+            autoplay: 4000,
+            dots: false,
+            slidesToShow: 1,
+        });
+    });
+</script>
+
 </div>
 </body>
 </html>
